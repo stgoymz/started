@@ -39,7 +39,7 @@ files = {
 	},
 	img: {
 		watch : paths.dev + "/img/**/*",
-		src : paths.dev + "/img/**/*.{jpg,png,gif}",
+		src : paths.dev + "/img/**/*.{jpg,png,gif,svg}",
 		dist: paths.dist + "/img"
 	},
 	fonts: {
