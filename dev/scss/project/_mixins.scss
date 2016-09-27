@@ -1,0 +1,33 @@
+@mixin no-gutter {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@mixin img-resize {
+	width: auto;
+	height: 100%;
+}
+
+@mixin trim-text {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin img-disabled {
+	pointer-events: none;
+	user-select: none;
+}
+
+@mixin vertical-center {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+// @include translate($propiedad, $tiempoInicio, $easing, $tiempoSalida);
+@mixin translate($propiedad, $tiempoInicio, $easing, $tiempoSalida) {
+  -webkit-transition: $propiedad, $tiempoInicio, $easing, $tiempoSalida;
+  -moz-transition: $propiedad, $tiempoInicio, $easing, $tiempoSalida;
+  -o-transition: $propiedad, $tiempoInicio, $easing, $tiempoSalida;
+  transition: $propiedad, $tiempoInicio, $easing, $tiempoSalida;
+}

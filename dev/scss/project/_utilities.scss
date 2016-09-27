@@ -1,0 +1,33 @@
+@include utility('text-center') {
+	text-align: center;
+}
+@include utility('text-left') {
+	text-align: left;
+}
+@include utility('text-right') {
+	text-align: right;
+}
+@include utility('pull-right') {
+	float: right;
+}
+@include utility('pull-left') {
+	float: left;
+}
+@include utility('hidden-xs') {
+	@media only screen and (max-width : 768px) {
+		display:none;
+	}
+}
+@include utility('m-t-20') {
+	margin-top:20px;
+}
+@include utility('m-b-20') {
+	margin-bottom:20px;
+}
+@include utility('no-gutter') {
+	@include no-gutter;
+}
+@include utility('vertical-center') {
+	display: table-cell;
+	vertical-align: middle;
+}

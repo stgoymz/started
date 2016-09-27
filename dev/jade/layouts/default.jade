@@ -1,0 +1,20 @@
+include ../partials/_mixins.jade
+//- Default Template
+doctype html
+html(lang="es")
+	block vars
+		- var pageTitle = 'Título Genérico'
+		- var path = '/'
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title #{pageTitle}
+		link(href="css/main.min.css" rel="stylesheet")
+	body
+		include ../partials/_header.jade
+		//- Content
+		block content
+		//- End of Content
+		include ../partials/_footer.jade
+		include ../partials/_scripts.jade
